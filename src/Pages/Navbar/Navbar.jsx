@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 const Navbar = () => {
 
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-gray-100 shadow-sm">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -14,7 +14,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex="-1"
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 font-semibold">
+                        className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 w-52 p-2 font-semibold">
                         <NavLink to='/'>Home</NavLink>
                         <NavLink to='/apps'>Apps</NavLink>
                         <NavLink to='/'>Installation</NavLink>
@@ -26,13 +26,13 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal gap-3 font-semibold">
+                <ul className="menu menu-horizontal gap-3 font-semibold text-black">
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='/apps'>Apps</NavLink>
                     <NavLink to='/'>Installation</NavLink>
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end mr-10">
                 <button className='btn btn-primary rounded-xl'><span><FaGithub></FaGithub></span>Contribute</button>
             </div>
         </div>

@@ -6,7 +6,7 @@ import Footer from './Pages/Footer/Footer'
 function App() {
 
   return (
-    <div className='max-w-[1200px]'>
+    <div>
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>
