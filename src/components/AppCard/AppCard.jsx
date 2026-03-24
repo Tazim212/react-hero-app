@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCloudDownloadAlt } from 'react-icons/fa';
+import { FaCloudDownloadAlt, FaStar } from 'react-icons/fa';
 import { Link } from 'react-router';
 
 const AppCard = ({ app }) => {
@@ -18,9 +18,9 @@ const AppCard = ({ app }) => {
                 <div className="mx-3 my-1">
                     <div className='flex justify-between items-center gap-3'>
                         <h2 className="text-xl font-semibold">{title}</h2>
-                        <div className="badge badge-accent"><FaCloudDownloadAlt className='text-xl' /> {downloads}</div>
+                        <div className="badge badge-accent text-center"><FaCloudDownloadAlt className='text-xl' /> {downloads}</div>
                     </div>
-                    <p>{ratingAvg}</p>
+                    <p className='flex items-center gap-2 pt-2'><FaStar></FaStar> {ratingAvg}</p>
                 </div>
             </div>
         </Link>

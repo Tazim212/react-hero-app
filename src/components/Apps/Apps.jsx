@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import AllApps from '../AllApps/AllApps';
 
 const Apps = () => {
     const [appData, setAppData] = useState([])
@@ -31,6 +32,12 @@ const Apps = () => {
                     </svg>
                     <input type="search" required placeholder="Search" />
                 </label>
+            </div>
+
+            <div className='grid grid-cols-1 md:grid-cols-4'>
+                {
+                    appData.map(app =><AllApps key={app.id} app={app}></AllApps>)
+                }
             </div>
         </div>
     );

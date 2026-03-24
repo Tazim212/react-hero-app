@@ -3,6 +3,7 @@ import AppCard from '../AppCard/AppCard';
 import { Link } from 'react-router';
 
 const appData = fetch('apps.json').then(res => res.json())
+
 const AppContainer = () => {
 
     const apps = use(appData)
