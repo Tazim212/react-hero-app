@@ -1,11 +1,13 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import AppContainer from '../AppContainer/AppContainer';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Banner></Banner>
-        </div>
+            <AppContainer></AppContainer>
+        </>
     );
 };
 
