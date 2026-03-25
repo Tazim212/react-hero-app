@@ -6,7 +6,7 @@ import { FaAppStore, FaGooglePlay } from 'react-icons/fa';
 const Banner = () => {
     return (
         <div className='mx-auto my-5 w-[600px]'>
-            <h1 className='text-3xl text-center font-bold'>We Build<br></br> <span className='text-purple-600'>Productive</span>Apps</h1>
+            <h1 className='text-3xl text-center font-bold'>We Build<br></br> <span className='text-purple-600'>Productive</span> Apps</h1>
             <p className='text-center py-3'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more 
                 exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             
