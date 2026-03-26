@@ -8,7 +8,8 @@ const AppCard = ({ app }) => {
 
     return (
         <Link to={`/appdetails/${id}`}>
-            <div className="card bg-gray-100 h-[370px] w-[270px] shadow-sm my-4 mx-auto text-black">
+            <div className="card bg-gray-300 h-[370px] w-[270px] shadow-sm my-4 mx-auto text-black 
+            transition delay-150 duration-400 ease-in-out hover:-translate-x-1 hover:scale-105 hover:bg-gray-300">
 
                 <img
                     src={image}

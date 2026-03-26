@@ -22,7 +22,7 @@ const AppContainer = () => {
                 }
             </div>
             <div className='text-center mb-4'>
-                <Link to='/apps'><button className='btn btn-secondary text-center'>Show All</button></Link>
+                <Link to='/apps'><button className='btn btn-secondary text-center px-8'>Show All</button></Link>
             </div>
         </div>
     );

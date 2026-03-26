@@ -5,7 +5,7 @@ import { FaBars, FaGithub } from 'react-icons/fa';
 const Navbar = () => {
 
     return (
-        <div className="navbar bg-gray-100 shadow-sm">
+        <div className="navbar bg-gray-100 shadow-lg">
             <div className="navbar-start">
                 <div className="dropdown">
                     <span tabIndex={0} className='btn btn-outline btn-accent lg:hidden text-md'><FaBars></FaBars></span>
