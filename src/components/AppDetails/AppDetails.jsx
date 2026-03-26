@@ -35,12 +35,12 @@ const AppDetails = () => {
     return (
         <div className='bg-white text-black'>
             <div className="bg-gray-200 min-h-75 text-black">
-                <div className="flex items-center gap-3 md:gap-9">
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-9">
                     <img
                         src={singleAppDetails?.image}
-                        className="rounded-lg shadow-2xl ml-2 md:ml-16 pt-8 md:pt-12 mb-7 w-32 md:w-75 h-32 md:h-72"
+                        className="rounded-lg shadow-2xl ml-7 md:ml-16 pt-8 md:pt-12 mb-0 md:mb-7 w-72 md:w-75 h-48 md:h-72"
                     />
-                    <div className='pt-5 md:pt-0'>
+                    <div className='pt-0 ml-7 md:ml-0'>
                         <h1 className="text-lg md:text-5xl font-bold pb-2 md:pb-10">{singleAppDetails?.title}</h1>
 
                         <div className='flex justify-start items-center gap-2 md:gap-10'>
