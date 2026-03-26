@@ -9,7 +9,7 @@ const ErrorPage = () => {
             <img src={errImg} className='mx-auto' alt="" />
             <h1 className='text-3xl font-bold text-center text-black'>Oops Page Not Found..</h1>
             <div className='text-center mt-7'>
-                <Link to="/" className='text-center'><buttton className="btn btn-primary">Back to home</buttton></Link>
+                <Link to="/" className='text-center'><button className="btn btn-primary">Back to home</button></Link>
             </div>
         </div>
     );

@@ -12,25 +12,36 @@ const AppDetails = () => {
 
     const { id } = useParams();
     const [appData, setAppData] = useState([])
-    
-    useEffect(() => {
-        fetch("/apps.json")
-        .then(res => res.json())
-        .then(data => setAppData(data))
-    }, [])
+    const [loading, setLoading] = useState(true)
     const [installed, setInstalled] = useState(false);
 
-
+    useEffect(() => {
+        fetch("/apps.json")
+            .then(res => res.json())
+            .then(data => {
+                setAppData(data);
+                setLoading(false);
+            })
+    }, [])
     const singleAppDetails = appData.find(item => item.id === parseInt(id))
     
-    if(!singleAppDetails){
-        return <AppError></AppError>
-    }
     const handleInstall = () => {
         notify()
         setInstalled(true)
     }
     const chartData = singleAppDetails?.ratings?.map(item => ({ name: item.name, count: item.count }))
+
+    if (loading) {
+        return (
+            <div className="flex justify-center items-center min-h-screen">
+                <span className="loading loading-spinner loading-lg">Loading...</span>
+            </div>
+        );
+    }
+
+    if (!singleAppDetails) {
+        return <AppError></AppError>
+    }
 
     return (
         <div className='bg-white text-black'>
