@@ -37,7 +37,7 @@ const Footer = () => {
                 </nav>
 
             </footer>
-            <footer className='text-center bg-blue-950 pb-5'>
+            <footer className='text-center text-white bg-blue-950 pb-5'>
                 <p>Copyright © 2025 - All right reserved</p>
             </footer>
         </div>

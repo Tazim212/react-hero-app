@@ -1,12 +1,16 @@
-import React, { use } from 'react';
+import React, { useEffect, useState } from 'react';
 import AppCard from '../AppCard/AppCard';
 import { Link } from 'react-router';
 
-const appData = fetch('apps.json').then(res => res.json())
-
 const AppContainer = () => {
 
-    const apps = use(appData)
+    const [apps, setApps] = useState([]);
+
+    useEffect(() =>{
+        fetch("apps.json")
+        .then(res =>res.json())
+        .then(data => setApps(data))
+    }, [])
 
     return (
         <div>

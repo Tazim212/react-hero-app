@@ -11,8 +11,8 @@ const Banner = () => {
                 exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 
             <div className='text-center my-4'>
-                <Link to='https://play.google.com/store/games?hl=en'><button className='btn bg-white text-black mr-7 rounded-md'><FaGooglePlay className='text-green-400'></FaGooglePlay> Google Play</button></Link>
-                <Link to='https://www.apple.com/app-store/'><button className='btn bg-white text-black rounded-md'><FaAppStore className='text-sky-400'></FaAppStore> App Store</button></Link>
+                <Link to='https://play.google.com/store/games?hl=en'><button className='btn bg-white text-black mr-7 rounded-md hover:bg-blue-900 hover:text-white'><FaGooglePlay className='text-green-400'></FaGooglePlay> Google Play</button></Link>
+                <Link to='https://www.apple.com/app-store/'><button className='btn bg-white text-black rounded-md hover:bg-blue-900 hover:text-white'><FaAppStore className='text-sky-400'></FaAppStore> App Store</button></Link>
             </div>
 
             <img src={hero} className='w-2/3 md:w-[650px] h-fit md:h-[350px] mx-auto' alt="" />

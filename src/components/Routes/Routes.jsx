@@ -5,11 +5,13 @@ import Apps from '../Apps/Apps';
 import Home from '../Home/Home';
 import AppDetails from '../AppDetails/AppDetails';
 import ErrorPage from '../../Pages/ErrorPage/ErrorPage';
+import Installation from '../Installation/Installation';
 
 export const router = createBrowserRouter([
     {
         path: "/",
         Component: App,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
             path: "/",
@@ -23,10 +25,10 @@ export const router = createBrowserRouter([
             path: '/appdetails/:id',
             Component: AppDetails
         },
-        // {
-        //     path: 'install',
-        //     element: <div>okk</div>,
-        // }
+        {
+            path: '/installation',
+            Component: Installation
+        }
     ]
   },
   
