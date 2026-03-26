@@ -4,6 +4,7 @@ import { AiFillLike } from 'react-icons/ai';
 import { ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import AppError from '../../Pages/AppError/AppError';
 
 const notify = () => toast("Installed Successfully");
 
@@ -21,7 +22,10 @@ const AppDetails = () => {
 
 
     const singleAppDetails = appData.find(item => item.id === parseInt(id))
-
+    
+    if(!singleAppDetails){
+        return <AppError></AppError>
+    }
     const handleInstall = () => {
         notify()
         setInstalled(true)
@@ -34,7 +38,7 @@ const AppDetails = () => {
                 <div className="flex items-center gap-3 md:gap-9">
                     <img
                         src={singleAppDetails?.image}
-                        className="rounded-lg shadow-2xl ml-2 md:ml-16 pt-8 md:pt-12 mb-7 w-32 md:w-100 h-32 md:h-87.5"
+                        className="rounded-lg shadow-2xl ml-2 md:ml-16 pt-8 md:pt-12 mb-7 w-32 md:w-75 h-32 md:h-72"
                     />
                     <div className='pt-5 md:pt-0'>
                         <h1 className="text-lg md:text-5xl font-bold pb-2 md:pb-10">{singleAppDetails?.title}</h1>
